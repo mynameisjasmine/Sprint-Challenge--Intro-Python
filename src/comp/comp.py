@@ -23,21 +23,37 @@ humans = [
 
 # Write a list comprehension that creates a list of names of everyone
 # whose name starts with 'D':
+
 print("Starts with D:")
 a = []
-print(a)
+for human in humans:
+    if human.name[0] == 'D':
+        a.append(human.name)
+        
+          
+
+print('D LIST:', a)
 
 # Write a list comprehension that creates a list of names of everyone
 # whose name ends in "e".
 print("Ends with e:")
 b = []
-print(b)
+# w = humans[0].name
+# print('ECHECK', w[-1:])
+# LATER
+# for human in humans:
+#     if w[-1:] == 'e':
+#         a.append(human.name)
+# print('E LIST:', b)
 
 # Write a list comprehension that creates a list of names of everyone
 # whose name starts with any letter between 'C' and 'G' inclusive.
 print("Starts between C and G, inclusive:")
 c = []
-print(c)
+for human in humans:
+    if human.name[] == 'C' or 'D' or 'E' or 'F' or 'G' :
+        c.append(human.name)
+print('ALPHA range:', c)
 
 # Write a list comprehension that creates a list of all the ages plus 10.
 print("Ages plus 10:")
