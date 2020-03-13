@@ -8,7 +8,7 @@ class GroundVehicle():
         self.num_wheels = num_wheels or 4
 
     def drive(self):
-        print('vroooom')
+        return 'vroooom'
     
 
     # TODO
@@ -26,7 +26,7 @@ class Motorcycle(GroundVehicle):
         super().__init__(num_wheels)
 
     def drive(self):
-         print('BRAAP!')
+         return'BRAAP!'
 
 
 # TODO
@@ -41,5 +41,5 @@ vehicles = [
 
 # Go through the vehicles list and print the result of calling drive() on each.
 for i in vehicles:
-    print(i.drive)
+    print(i.drive())
 # TODO
