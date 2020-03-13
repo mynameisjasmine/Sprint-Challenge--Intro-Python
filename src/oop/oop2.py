@@ -26,7 +26,7 @@ class Motorcycle(GroundVehicle):
         super().__init__(num_wheels)
 
     def drive(self):
-         return'BRAAP!'
+         return'BRAAAP!!'
 
 
 # TODO

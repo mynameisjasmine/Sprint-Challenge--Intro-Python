@@ -84,30 +84,22 @@ print(e)
 # age, for example ("David", 31), for everyone between the ages of 27 and 32,
 # inclusive.
 print("Names and ages between 27 and 32:")
-f = []
-g = []
-for human in humans:
-    if human.age in range(27,32):
-          f.append(f'{human.name}')
-          g.append(f'{human.age}')
-          
-          
-         
-new_zip = zip(f,g)
+f = [(human.name, human.age) for human in humans if human.age in range(27,33)]
+    
 
-f = new_zip
-      
-print(*f)
+print(f)
 
 
 # Write a list comprehension that creates a list of new Humans like the old
 # list, except with all the names uppercase and the ages with 5 added to them.
 # The "humans" list should be unmodified.
 print("All names uppercase:")
-g = []
-for human in humans:
-      if human:
-        g.append(f'{human.name.upper()}, {human.age + 5}')
+
+
+g = [Human(human.name.upper(), human.age + 5)  for human in humans]
+# for human in humans:
+#       if human:
+#         g.append(f'{human.name.upper()}, {human.age + 5}')
 print(g)
 
 # Write a list comprehension that contains the square root of all the ages.
